@@ -1,0 +1,85 @@
+main{
+    background-color: hsl(233, 47%, 7%);
+    height: 100vh;
+}
+.card-background{
+    background-color: hsl(244, 38%, 16%);
+}
+
+h1{
+    font-size: 2.4rem;
+    padding: 70px 30px 10px 60px ;
+    font-family: "Inter";
+}
+p{
+    padding: 10px 100px 10px 60px ;
+
+
+}
+.main-paragraph{
+    color: hsla(0, 0%, 100%, 0.75);
+    font-size: 1.05rem;
+    margin-bottom: 10px;
+}
+.stats{
+    color: hsla(0, 0%, 100%, 0.75);
+    font-size: 0.8rem;
+    font-family: "Lexend Deca";
+}
+.stats-row{
+    width: 80%;
+}
+.purple{
+    color: hsl(277, 64%, 61%);
+}
+.row>*{
+    padding-left: 0;
+}
+
+.violet-bg::after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    left: 0%;
+    background-color: hsla(277, 64%, 61%,0.5);
+    z-index: 2;
+
+
+}
+.stats-img{
+    padding-right: 0;
+    margin-right: 0;
+}
+@media screen and (max-width: 576px) {
+    .img-box{
+        order: 0;
+    }
+    .card-background{
+        order: 3;
+    }
+    h1{
+        font-size: 28px;
+        text-align: center;
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-top: 40px;
+    }
+    .main-paragraph{
+        text-align: center;
+        padding-left: 35px;
+        padding-right: 35px;
+    }
+    .stats-row{
+        margin: auto !important;
+        padding-left: 0 !important;
+    }
+    p{
+        padding-left: 0;
+        padding-right: 0%;
+    }
+    main{
+        height: 200vh;
+    }
+}
